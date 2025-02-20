@@ -2,9 +2,9 @@ from flask import Flask
 
 from flask_security import Security
 
-from cram_school import models
-from cram_school.views import register_blueprint
-from cram_school.lib import config
+import models
+from views import register_blueprint
+from lib import config
 
 
 def create_app():

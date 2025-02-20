@@ -7,11 +7,15 @@ class Config(object):
     SECURITY_LOGIN_USER_TEMPLATE = "login.html"
 
     # MongoDB Config
+    MONGODB_DB = "test"
     MONGODB_HOST = (
-        "mongodb+srv://Liao:871029@cluster0-sk2jk.mongodb.net/CramSchool"
+        "mongodb://localhost:27017"
     )
-    MONGODB_DB = True
+    MONGODB_USERNAME = "Liao"
+    MONGODB_PASSWORD = "871029"
+    MONGODB_AUTH_SOURCE = "admin"
 
     JSON_AS_ASCII = False
     TEMPLATES_AUTO_RELOAD = True
     UPLOAD_FOLDER = UPLOAD_FOLDER
+
